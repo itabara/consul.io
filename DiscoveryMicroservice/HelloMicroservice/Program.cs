@@ -19,8 +19,8 @@ namespace HelloMS
         }
     }
 
-    public class CustomerController : ApiController
-    {
+    public class CustomersController : ApiController
+    {        
         public Customer Get()
         {
             return new Customer
@@ -32,7 +32,7 @@ namespace HelloMS
         }
 
         [Route("status")]
-        public string GetStatus()
+        public string Status()
         {
             Logger.Information("OK");
             return "ok";
